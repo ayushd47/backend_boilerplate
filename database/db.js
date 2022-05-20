@@ -8,8 +8,7 @@ const DATABASE_NAME = config.DATABASE.MONGO.DATABASE
 const CONNECTION_STRING = `${URL}:${PORT}/${DATABASE_NAME}`
 
 mongoose.connect(CONNECTION_STRING, {
-    useNewUrlParser: true,
-    useUnifiedTropology: true
+    useNewUrlParser: true
 })
-
-console.log(`Establishing connection for database: ${DATABASE_NAME} with ${CONNECTION_STRING}`);
+console.log('------------------------------------------------------------------------------------------------------')
+console.log(`Establishing connection for database: ${DATABASE_NAME} || with URL ${CONNECTION_STRING}`);
